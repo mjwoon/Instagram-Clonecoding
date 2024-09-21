@@ -2,7 +2,7 @@ import { configureStore } from "@reduxjs/toolkit";
 import { authReducer } from "./reducers/auth/authSlice";
 import { homeReducer } from "./reducers/home/homeSlice";
 import { modalReducer } from "./reducers/modal/modalSlice";
-import { directReducer } from "./reducers/direct/DirectSlice";
+import { directReducer } from "./reducers/DM/DirectSlice";
 import { uploadReducer } from "./reducers/upload/uploadSlice";
 import { profileReducer } from "./reducers/profile/profileSlice";
 import { editReducer } from "./reducers/edit/editSlice";
