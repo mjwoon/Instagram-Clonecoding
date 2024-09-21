@@ -90,6 +90,7 @@ export const lookUpChatRoom = createAsyncThunk<
 // 2. `DB의 JoinRoom 테이블에 본인이 추가되는 상황`
 // - `채팅방 생성`
 // - `상대방과 참여한 채팅방이 없는 상황에서, 상대방이 본인에게 메시지 송신`
+// DB나중에 확인해야함
 
 export const lookUpChatList = createAsyncThunk<
   Direct.ChatItem[],
