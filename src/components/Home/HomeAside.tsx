@@ -1,9 +1,9 @@
 import { useAppSelector } from "../../redux/Hooks";
-import StoryCircle from "components/Common/StoryCircle";
+import StoryCircle from "../common/StoryCircle";
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import Username from "../Common/Username";
+import Username from "../common/Username";
 
 interface RightMarginProp {
   rightMargin: number;

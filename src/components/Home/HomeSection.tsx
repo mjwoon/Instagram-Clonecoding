@@ -1,6 +1,6 @@
 import { getHomeArticles } from "../../redux/reducers/home/homeThunk";
 import { useAppDispatch, useAppSelector } from "../../redux/Hooks";
-import Article from "components/Common/Article";
+//import Article from "components/Common/Article";
 import ExtraLoadingCircle from "./ExtraLoadingCircle";
 import { useEffect } from "react";
 
@@ -19,7 +19,7 @@ const HomeSection = () => {
 
   return (
     <section>
-      {isLoading ||
+      {/* {isLoading ||
         articles.map((article, index) => (
           <Article
             key={article.postId}
@@ -27,7 +27,7 @@ const HomeSection = () => {
             isObserving={articles.length - 4 === index}
           />
         ))}
-      {isExtraArticleLoading && <ExtraLoadingCircle />}
+      {isExtraArticleLoading && <ExtraLoadingCircle />} */}
     </section>
   );
 };

@@ -5,7 +5,7 @@ import { NavLink } from "react-router-dom";
 import { useEffect } from "react";
 import { useAppDispatch } from "../../../redux/Hooks";
 import { getUserInfo } from "../../../redux/reducers/auth/authThunk";
-import Logo from "assets/Images/logo-hello-world.png";
+import Logo from "../../../assets/images/logo-hello-world.png";
 
 const HeaderContainer = styled.nav`
   display: flex;

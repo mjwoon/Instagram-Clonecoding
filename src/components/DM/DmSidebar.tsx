@@ -11,7 +11,7 @@ import {
   Settings,
   Logo,
   Thread,
-} from "../../../assets/index";
+} from "../../assets/index";
 
 const SidebarStyle = styled.div`
   width = 72px;

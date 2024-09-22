@@ -1,4 +1,4 @@
-import { ReactComponent as LoadingCircle } from "assets/Svgs/loadingCircle.svg";
+import { ReactComponent as LoadingCircle } from "../../assets/svgs/direct-active.svg"
 import styled from "styled-components";
 
 const StyledLoading = styled.div`

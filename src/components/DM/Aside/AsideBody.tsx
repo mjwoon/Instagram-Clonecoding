@@ -1,4 +1,4 @@
-import ChatList from "components/Direct/Aside/ChatList";
+import ChatList from "./Chatlist";
 // 이런 식으로 type을 가져와서 제가 필요한 모듈을 가져와요
 import styled from "styled-components";
 import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";

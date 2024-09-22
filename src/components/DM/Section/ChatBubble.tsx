@@ -4,8 +4,8 @@ import {
   setSelectedMessageId,
 } from "../../../redux/reducers/DM/DirectSlice";
 import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";
-import { ReactComponent as Slide } from "assets/Svgs/slide.svg";
-import { ReactComponent as ThreeDots } from "assets/Svgs/threeDots.svg";
+import { ReactComponent as Slide } from "../../../assets/svgs/slide.svg";
+import { ReactComponent as ThreeDots } from "../../../assets/svgs/threeDots.svg";
 import moment from "moment";
 import React, { useCallback, useEffect, useRef, useState } from "react";
 import { Link } from "react-router-dom";
@@ -16,7 +16,7 @@ interface ChatBubbleProps {
   // DM 메세지에는 여러가지 타입이 있습니다. 순서대로 일반 메세지, 포스트 공유, 이미지 전송
   me: boolean;
   showDate: boolean;
-  messageDate: string;
+  messageDate: string; 
   messageId: number;
   likeMessageHandler: () => void;
   unlikeMessageHandler: () => void;

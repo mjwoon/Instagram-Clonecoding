@@ -1,7 +1,7 @@
 import { selectView } from "../../../redux/reducers/DM/DirectSlice";
-import { useAppDispatch, useAppSelector } from '../../../redux/Hooks'
-import { ReactComponent as DetailInfoActive } from "assets/Svgs/direct-detail-info-active.svg";
-import { ReactComponent as DetailInfo } from "assets/Svgs/direct-detail-info.svg";
+import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";
+import { ReactComponent as DetailInfoActive } from "../../../assets/svgs/direct-detail-info-active.svg";
+import { ReactComponent as DetailInfo } from "../../../assets/svgs/direct-detail-info.svg";
 import React, { useEffect, useMemo, useState } from "react";
 import { Link } from "react-router-dom";
 import styled from "styled-components";

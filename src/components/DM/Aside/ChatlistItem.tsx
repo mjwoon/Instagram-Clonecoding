@@ -1,8 +1,7 @@
 import { lookUpChatList } from "../../../redux/reducers/DM/DirectThunk";
 import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";
-import useGapText from "hooks/useGapText";
-import useOnView from "hooks/useOnView";
-import Direct from "pages/Direct";
+import useGapText from "../../../hooks/useGapText";
+import useOnView from "../../../hooks/useOnView";
 import React, { useEffect, useMemo, useRef } from "react";
 import styled from "styled-components";
 
@@ -158,9 +157,9 @@ const ChatListItem = ({
         </div>
 
         <div className="last-info">
-          <div className="last-chat-container">
+          <div>
             {lastMessage?.messageType === "TEXT"
-              ? lastMessage?.content
+              ? String(lastMessage?.content) // content를 문자열로 변환
               : "사진"}
           </div>
           <span className={"dot"}>·</span>

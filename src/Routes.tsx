@@ -1,5 +1,6 @@
 import Home from "./pages/Home/Home";
 import Direct from "./pages/DM/DM";
+// import AuthPage from "pages/Auth";
 // import Profile from "pages/Profile";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Header from "./components/common/Header/Header";

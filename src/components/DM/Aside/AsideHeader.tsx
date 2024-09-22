@@ -1,10 +1,10 @@
 import styled from "styled-components";
-import { ReactComponent as ArrowUp } from "assets/Svgs/arrow-up.svg";
-import { ReactComponent as DmWrite } from "assets/Svgs/dm-write.svg";
+import { ReactComponent as ArrowUp } from "../../../assets/svgs/arrow-up.svg";
+import { ReactComponent as DmWrite } from "../../../assets/svgs/dm-write.svg";
 import theme from "../../../styles/theme";
 import { openModal } from "../../../redux/reducers/DM/DirectSlice";
-import NewChatModal from "components/Direct/Section/Modals/NewChatModal/NewChatModal";
-import ConvertAccountModal from "components/Direct/Section/Modals/ConvertAccountModal";
+import NewChatModal from "../Section/Modals/NewChatModal/NewChatModal";
+import ConvertAccountModal from "../Section/Modals/ConvertAccountModal";
 import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";
 
 const Container = styled.header`

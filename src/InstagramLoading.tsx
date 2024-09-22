@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as InstagramLogoLoading } from "assets/Svgs/instagram-logo-loading.svg";
+import { ReactComponent as InstagramLogoLoading } from "./assets/svgs/instagram-logo-loading.svg";
 
 const StyledInstagramLoading = styled.div`
   position: absolute;

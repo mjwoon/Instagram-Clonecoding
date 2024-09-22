@@ -50,6 +50,7 @@ export default function AuthPage(props: { router: "signIn" | "signUp" }) {
     <>
       {username && code ? (
         <InstagramLoading />
+        //<p></p>
       ) : (
         <Section>
           <main className="form-container">

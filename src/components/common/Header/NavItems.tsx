@@ -1,12 +1,12 @@
 import styled from "styled-components";
-import { ReactComponent as Home } from "assets/Svgs/home.svg";
-import { ReactComponent as HomeActive } from "assets/Svgs/home-active.svg";
+import { ReactComponent as Home } from "../../../assets/svgs/home.svg";
+import { ReactComponent as HomeActive } from "../../../assets/svgs/home-active.svg";
 
-import { ReactComponent as Direct } from "assets/Svgs/direct.svg";
-import { ReactComponent as DirectActive } from "assets/Svgs/direct-active.svg";
+import { ReactComponent as Direct } from "../../../assets/svgs/direct.svg";
+import { ReactComponent as DirectActive } from "../../../assets/svgs/direct-active.svg";
 
-import { ReactComponent as Heart } from "assets/Svgs/heart.svg";
-import { ReactComponent as HeartActive } from "assets/Svgs/heart-active.svg";
+import { ReactComponent as Heart } from "../../../assets/Svgs/heart.svg";
+import { ReactComponent as HeartActive } from "../../../assets/svgs/heart-active.svg";
 
 import { NavLink } from "react-router-dom";
 import { useAppDispatch, useAppSelector } from "../../../redux/Hooks";

@@ -2,10 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { useAppDispatch } from "../../../redux/Hooks";
 import { logout } from "../../../redux/reducers/auth/authThunk";
-import { ReactComponent as Profile } from "assets/Svgs/header-nav-bar/profile.svg";
-import { ReactComponent as Store } from "assets/Svgs/header-nav-bar/store.svg";
-import { ReactComponent as Setting } from "assets/Svgs/header-nav-bar/setting.svg";
-import { ReactComponent as Change } from "assets/Svgs/header-nav-bar/change.svg";
+import { ReactComponent as Profile } from "../../../assets/svgs/header-nav-bar/profile.svg";
+import { ReactComponent as Store } from "../../../assets/svgs/header-nav-bar/store.svg";
+import { ReactComponent as Setting } from "../../../assets/svgs/header-nav-bar/setting.svg";
+import { ReactComponent as Change } from "../../../assets/svgs/header-nav-bar/change.svg";
 import { Link } from "react-router-dom";
 
 const Container = styled.div`

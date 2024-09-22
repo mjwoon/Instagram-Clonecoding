@@ -12,8 +12,7 @@ import {
   Settings,
   Logo,
   Thread,
-} from "../../../assets/index";
-
+} from "../../assets/index";
 
 // aside : 별도 구획 요소
 const SideStyle = styled.aside`
@@ -39,4 +38,4 @@ const TabStyle = styled.div`
 
   box-shadow: none;
   border-radius: 8px;
-`
+`;

@@ -6,9 +6,9 @@ import {
   useState,
 } from "react";
 import styled from "styled-components";
-import { ReactComponent as Emoji } from "assets/Svgs/direct-emoji-icon.svg";
-import { ReactComponent as ImageUpload } from "assets/Svgs/direct-image-upload.svg";
-import { ReactComponent as Heart } from "assets/Svgs/heart.svg";
+import { ReactComponent as Emoji } from "../../../assets/svgs/direct-emoji-icon.svg";
+import { ReactComponent as ImageUpload } from "../../../assets/svgs/direct-image-upload.svg";
+import { ReactComponent as Heart } from "../../../assets/svgs/heart.svg";
 import EmojiPicker, { EmojiClickData } from "emoji-picker-react";
 import { useAppSelector } from "../../../redux/Hooks";
 import { authorizedCustomAxios } from "../../../customAxios";
