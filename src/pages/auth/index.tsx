@@ -1,6 +1,6 @@
 import { authAction } from "../../redux/reducers/auth/authSlice";
 import { useAppDispatch } from "../../redux/Hooks";
-import Form from "components/Auth/Form";
+import Form from "../../components/auth/Form";
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import styled from "styled-components";

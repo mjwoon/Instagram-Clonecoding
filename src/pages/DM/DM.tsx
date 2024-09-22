@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import theme from "../../styles/theme";
+
 import { useEffect, useRef, useState } from "react";
 import AsideBody from "../../components/DM/Aside/AsideBody";
 import AsideHeader from "../../components/DM/Aside/AsideHeader";
@@ -44,7 +45,7 @@ const Direct = () => {
         //  brokerURL: "ws://ec2-3-36-185-121.ap-northeast-2.compute.amazonaws.com:8080/ws-connection", // 웹소켓 서버로 직접 접속
         webSocketFactory: () =>
           new SockJS(
-            "http://ec2-3-36-185-121.ap-northeast-2.compute.amazonaws.com:8080/ws-connection"
+            "/"
           ), // proxy를 통한 접속
         debug: function (str) {
           console.log(str);

@@ -3,7 +3,7 @@ import HomeAside from "../../components/Home/HomeAside";
 import HomeSection from "../../components/Home/HomeSection";
 import { useEffect } from "react";
 import { useAppDispatch } from "../../redux/Hooks";
-import { modalActions } from "app/store/ducks/modal/modalSlice";
+import { modalActions } from "../../redux/reducers/modal/modalSlice";
 
 const Layout = styled.div`
   padding-top: 30px;
