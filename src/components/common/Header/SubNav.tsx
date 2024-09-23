@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 import { useAppDispatch } from "../../../redux/Hooks";
-import { logout } from "../../../redux/reducers/auth/authThunk";
+import { logout } from "../../../redux/reducers/login/authThunk";
 import { ReactComponent as Profile } from "../../../assets/svgs/header-nav-bar/profile.svg";
 import { ReactComponent as Store } from "../../../assets/svgs/header-nav-bar/store.svg";
 import { ReactComponent as Setting } from "../../../assets/svgs/header-nav-bar/setting.svg";

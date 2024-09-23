@@ -2,7 +2,7 @@ import React, { useMemo, useRef } from "react";
 import ReactDOM from "react-dom";
 import Card from "./Card";
 import { CardProps } from "./Card";
-import { ReactComponent as Cancel } from "assets/Svgs/cancel.svg";
+import { ReactComponent as Cancel } from "../../assets/svgs/cancel.svg";
 import styled from "styled-components";
 
 interface PositionedModal extends CardProps {

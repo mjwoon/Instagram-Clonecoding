@@ -1,7 +1,7 @@
 import { createGlobalStyle } from "styled-components";
 import reset from "styled-reset";
 
-const GlobalStlye = createGlobalStyle`
+const GlobalStyle = createGlobalStyle`
     ${reset}
 
     * {
@@ -40,4 +40,4 @@ const GlobalStlye = createGlobalStyle`
     }
     `;
 
-export default GlobalStlye;
+export default GlobalStyle;

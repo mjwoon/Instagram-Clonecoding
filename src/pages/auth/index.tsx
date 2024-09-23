@@ -1,11 +1,11 @@
-import { authAction } from "../../redux/reducers/auth/authSlice";
+import { authAction } from "../../redux/reducers/login/authSlice";
 import { useAppDispatch } from "../../redux/Hooks";
 import Form from "../../components/auth/Form";
 import { useEffect } from "react";
 import { useNavigate, useLocation } from "react-router-dom";
 import styled from "styled-components";
 import queryString from "query-string";
-import { signInUseCode } from "../../redux/reducers/auth/authThunk";
+import { signInUseCode } from "../../redux/reducers/login/authThunk";
 import InstagramLoading from "../../InstagramLoading";
 
 const Section = styled.section`
@@ -50,8 +50,8 @@ export default function AuthPage(props: { router: "signIn" | "signUp" }) {
     <>
       {username && code ? (
         <InstagramLoading />
-        //<p></p>
       ) : (
+        //<p></p>
         <Section>
           <main className="form-container">
             <Form router={props.router} />

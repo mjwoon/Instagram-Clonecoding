@@ -2,7 +2,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 import { RootState } from "../../store";
 import { FAIL_TO_REISSUE_MESSAGE } from "../../../utils/constant";
 import { authorizedCustomAxios } from "../../../customAxios";
-import { authAction } from "../auth/authSlice";
+import { authAction } from "../login/authSlice";
 
 export const searchUser = createAsyncThunk<
   CommonType.searchResultType[],

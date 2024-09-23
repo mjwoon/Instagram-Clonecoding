@@ -41,7 +41,7 @@ export default function Form(props: { router: "signIn" | "signUp" }) {
   return (
     <Container pathname={pathname}>
       <ContentBox padding={contentBox.padding} margin={contentBox.margin}>
-        {props.router === "signIn" : <LoginForm />}
+     
       </ContentBox>
 
 

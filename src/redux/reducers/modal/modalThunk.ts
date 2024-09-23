@@ -1,7 +1,7 @@
 import { modalActions } from "./modalSlice";
 import { RootState } from "../../store";
 import { createAsyncThunk } from "@reduxjs/toolkit";
-import { authAction } from "../auth/authSlice";
+import { authAction } from "../login/authSlice";
 import { authorizedCustomAxios } from "../../../customAxios";
 import { FAIL_TO_REISSUE_MESSAGE } from "../../../utils/constant";
 

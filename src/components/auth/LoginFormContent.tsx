@@ -64,8 +64,7 @@ export default function LoginForm() {
       <div className="inputContainer">
         <form className="inputForm">
           <div className="loginForm">
-            <LoginFormAndButton />
-            <GoogleLogin />
+         
           </div>
           {errorMessage && (
             <div className="errorMessage">

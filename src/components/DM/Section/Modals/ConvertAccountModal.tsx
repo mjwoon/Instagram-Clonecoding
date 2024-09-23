@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { ReactComponent as Checked } from "assets/Svgs/filled-checked-icon.svg";
+import { ReactComponent as Checked } from "../../../../assets/svgs/filled-checked-icon.svg";
 import ModalCard from "../../../../styles/UI/ModalCard";
 import { useAppDispatch } from "../../../../redux/Hooks";
 import { closeModal, openModal } from "../../../../redux/reducers/DM/DirectSlice";

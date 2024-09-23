@@ -1,7 +1,7 @@
 import { createAsyncThunk } from "@reduxjs/toolkit";
 import { authorizedCustomAxios } from "../../../customAxios";
 import { FAIL_TO_REISSUE_MESSAGE } from "../../../utils/constant";
-import { authAction } from "../auth/authSlice";
+import { authAction } from "../login/authSlice";
 import { RootState } from "../../store";
 
 export const makeRoom = createAsyncThunk<

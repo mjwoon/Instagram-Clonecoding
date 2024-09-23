@@ -3,7 +3,7 @@ import { authorizedCustomAxios } from "../../../customAxios";
 import { homeActions } from "./homeSlice";
 import { ExtraArticleProps, RecentArticlesProps } from "./homeThunk.type";
 import { FAIL_TO_REISSUE_MESSAGE } from "../../../utils/constant";
-import { authAction } from "redux/reducers/auth/authSlice";
+import { authAction } from "../login/authSlice";
 
 export const getHomeArticles = createAsyncThunk<PostType.ArticleStateProps[]>(
   "home/getHomeArticles",

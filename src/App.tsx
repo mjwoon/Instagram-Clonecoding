@@ -1,10 +1,9 @@
 import { useAppDispatch, useAppSelector } from "./redux/Hooks";
-import { authAction } from "./redux/reducers/auth/authSlice";
+import { authAction } from "./redux/reducers/login/authSlice";
 import { customAxios, setAccessTokenInAxiosHeaders } from "./customAxios";
 import InstagramLoading from "./InstagramLoading";
 import { useEffect } from "react";
 import Routes from "./Routes";
-
 
 function App() {
   const isRefreshTokenChecking = useAppSelector(
