@@ -5,6 +5,7 @@ import SavedPosts from './Profile_saved';
 import TaggedPosts from './Profile_tagged';
 import Search from './Search'; // Search 모달 컴포넌트 추가
 import './Profile.css';
+import dummyImg from './img2.png'
 
 const ProfileDefault: React.FC = () => {
   // 현재 선택된 탭을 저장하는 state (기본값은 'posts')
@@ -43,9 +44,10 @@ const ProfileDefault: React.FC = () => {
         <nav className="menu">
           <ul>
             <li><button onClick={handleProfileClick}>Profile</button></li>
-            <li><button onClick={openSearchModal}>Search</button></li> {/* Link 대신 button 사용 */}
+            <li><button onClick={openSearchModal}>Search</button></li> 
           </ul>
         </nav>
+        {/* <img src={dummyImg}/> */}
       </div>
 
       {/* 우측 프로필 섹션 */}

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-
+import dummyImg from "./img.png"
+import './Profile.css'
 const ProfileEdit: React.FC = () => {
     return (
-        <div>
-            <h1>Profile Edit</h1>
+        <div className='profile-edit'>
+            <img src={dummyImg}/>
             <Link to="/">Go back to Profile</Link>
         </div>
     );
