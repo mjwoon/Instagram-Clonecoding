@@ -53,7 +53,7 @@ const ProfileDefault: React.FC = () => {
         <header className="profile-header">
           <div className="profile-info">
             <div className="profile-image">
-              <img src="https://via.placeholder.com/150" alt="Profile" />
+              <img src="https://via.placeholder.com/250" alt="Profile" />
             </div>
             <div className="profile-details">
               <div className="profile-username">
@@ -63,7 +63,7 @@ const ProfileDefault: React.FC = () => {
                 <span className="settings-icon">⚙️</span>
               </div>
               <ul className="profile-stats">
-                <li>게시물 <strong>10</strong></li>
+                <li>게시물 <strong>3</strong></li>
                 <li>팔로워 <strong>150</strong></li>
                 <li>팔로우 <strong>200</strong></li>
               </ul>
@@ -73,8 +73,8 @@ const ProfileDefault: React.FC = () => {
             </div>
           </div>
           <div className="profile-story">
-            <img src="https://via.placeholder.com/150" alt="story"></img>
-            <img src="https://via.placeholder.com/150" alt="story"></img>
+            <img src="https://via.placeholder.com/80" alt="story1"></img>
+            <img src="https://via.placeholder.com/80" alt="story2"></img>
           </div>
         </header>
 

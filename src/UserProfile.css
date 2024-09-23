@@ -34,7 +34,6 @@
   
   .profile-header {
     display: flex;
-    align-items: center;
     border-bottom: 1px solid #dbdbdb;
     padding-bottom: 20px;
   }
@@ -42,11 +41,12 @@
   .profile-info {
     display: flex;
     align-items: center;
+    margin-bottom:60px;
   }
   
   .profile-image img {
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     margin-right: 30px;
   }
@@ -75,4 +75,10 @@
   .profile-stats li {
     margin-right: 20px;
   }
-  
+  .profile-story {
+    display: flex; 
+    gap: 50px; 
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+  }
