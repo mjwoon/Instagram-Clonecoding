@@ -1,17 +1,38 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 import ProfilePosts from './Profile_posts';
 import SavedPosts from './Profile_saved';
 import TaggedPosts from './Profile_tagged';
+import Search from './Search'; // Search 모달 컴포넌트 추가
 import './Profile.css';
 
 const ProfileDefault: React.FC = () => {
   // 현재 선택된 탭을 저장하는 state (기본값은 'posts')
   const [activeTab, setActiveTab] = useState('posts');
+  const [isSearchModalOpen, setIsSearchModalOpen] = useState(false); // 모달 상태 관리
+  const navigate = useNavigate(); // useNavigate 훅 사용
+
+  const handleProfileClick = () => {
+    navigate('/'); // 버튼 클릭 시 /로 navigate
+  };
+  
+  const handleEditClick = () => {
+    navigate('/edit'); //버튼 클릭 시 /edit으로 navigate
+  }
 
   // 버튼 클릭에 따라 activeTab 값이 변경됨
   const handleTabClick = (tab: string) => {
     setActiveTab(tab);
+  };
+
+  // 검색 모달 열기
+  const openSearchModal = () => {
+    setIsSearchModalOpen(true);
+  };
+
+  // 검색 모달 닫기
+  const closeSearchModal = () => {
+    setIsSearchModalOpen(false);
   };
 
   return (
@@ -21,8 +42,8 @@ const ProfileDefault: React.FC = () => {
         <div className="logo">Instagram</div>
         <nav className="menu">
           <ul>
-            <li><Link to="/">Profile</Link></li>
-            <li><Link to="/search">Search</Link></li>
+            <li><button onClick={handleProfileClick}>Profile</button></li>
+            <li><button onClick={openSearchModal}>Search</button></li> {/* Link 대신 button 사용 */}
           </ul>
         </nav>
       </div>
@@ -37,9 +58,8 @@ const ProfileDefault: React.FC = () => {
             <div className="profile-details">
               <div className="profile-username">
                 <h2>username</h2>
-                <Link to="/edit">
-                  <button className="edit-btn">프로필 편집</button>
-                </Link>
+                <button onClick={handleEditClick} className="edit-btn">프로필 편집</button>
+                <button onClick={handleEditClick} className="edit-btn">보관된 스토리 보기</button>
                 <span className="settings-icon">⚙️</span>
               </div>
               <ul className="profile-stats">
@@ -47,7 +67,14 @@ const ProfileDefault: React.FC = () => {
                 <li>팔로워 <strong>150</strong></li>
                 <li>팔로우 <strong>200</strong></li>
               </ul>
+              <ul className="profile-stats">
+                <li>사용자 이름</li>
+              </ul>
             </div>
+          </div>
+          <div className="profile-story">
+            <img src="https://via.placeholder.com/150" alt="story"></img>
+            <img src="https://via.placeholder.com/150" alt="story"></img>
           </div>
         </header>
 
@@ -80,6 +107,9 @@ const ProfileDefault: React.FC = () => {
           {activeTab === 'tagged' && <TaggedPosts />}
         </div>
       </div>
+
+      {/* Search 모달 */}
+      {isSearchModalOpen && <Search closeModal={closeSearchModal} />} {/* 모달이 열려있을 때만 Search 컴포넌트 렌더링 */}
     </div>
   );
 };
