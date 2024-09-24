@@ -1,0 +1,287 @@
+.profile-container {
+    display: flex;
+  }
+  
+  .sidebar {
+    width: 250px;
+    background-color: #fff;
+    padding: 20px;
+    border-right: 1px solid #dbdbdb;
+    height: 100vh;
+  }
+/* 
+  .sidebar img{
+    width: 250px;
+    padding: 20px;
+  } */
+  
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .menu ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .profile-content {
+    flex: 1;
+    margin-top: 10px;
+    margin-left: 250px;
+    margin-right: 250px;
+  }
+  
+  .profile-header {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-bottom: 1px solid #dbdbdb;
+    padding-bottom: 60px;
+  }
+  
+  .profile-info {
+    display: flex;
+    align-items: center;
+  }
+  .profile-story img{
+    display: flex; 
+    gap: 50px; 
+    width:80px;
+    height:80px;
+    border-radius: 50%;
+    margin-bottom: 50px;
+  }
+  .profile-image img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin-right: 30px;
+  }
+  
+  .profile-details {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .profile-username {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .profile-username h2 {
+    margin-right: 20px;
+  }
+  
+  .edit-btn {
+    background-color: rgb(190, 190, 190);
+    color: black;
+    border: none;
+    padding: 10px 10px;
+    margin-right: 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-size: 17px;
+  }
+  
+  .settings-icon {
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .profile-stats {
+    display: flex;
+    list-style: none;
+    padding: 0;
+  }
+  
+  .profile-stats li {
+    margin-right: 40px;
+    font-size: 20px;
+  }
+  
+  .profile-tabs {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .profile-posts {
+    margin-top: 20px;
+  }
+  
+  .post-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+  }
+  .profile-edit img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+  }
+  .post-grid img {
+    width: 100%;
+    height: auto;
+  }
+  
+/* Profile.css */
+.profile-tabs button {
+  background: none;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.profile-tabs button.active {
+  border-top: 2px solid black;
+}
+
+.profile-posts .post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.profile-posts .post-grid img {
+  width: 100%;
+  height: auto;
+}
+/* 게시물 그리드 */
+.post-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.post-item {
+  position: relative;
+  cursor: pointer;
+}
+
+.post-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.post-overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  opacity: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  gap: 20px;
+  transition: opacity 0.3s ease;
+}
+
+.post-item:hover .post-overlay {
+  opacity: 1;
+}
+
+/* 모달 창 스타일 */
+.post-modal {
+  background: white;
+  width: 600px;
+  max-height: 90%;
+  margin: auto;
+  padding: 20px;
+  position: relative;
+  display: flex;
+  overflow-y: auto;
+  border-radius: 10px;
+}
+
+.post-modal-overlay {
+  background-color: rgba(0, 0, 0, 0.75);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  display: flex;
+  gap: 20px;
+}
+
+.modal-image {
+  width: 300px;
+  height: auto;
+}
+
+.modal-info {
+  flex: 1;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 14px;
+  resize: none;
+}
+
+.modal-actions {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.more-options-modal {
+  position: absolute;
+  top: 50px; /* X 버튼 밑에 위치 */
+  right: 20px; /* 화면 오른쪽에 고정 */
+  background-color: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  width: 200px; /* 세로로 긴 박스 모양 */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  z-index: 100; /* 기존 모달 위에 표시 */
+}
+
+.more-options-modal button {
+  display: block;
+  width: 100%;
+  margin-bottom: 10px;
+  background: none;
+  border: none;
+  text-align: left;
+  padding: 10px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.more-options-modal button:hover {
+  background-color: #f0f0f0;
+}
