@@ -1,5 +1,35 @@
 {
   "short_name": "React App",
+
+  "screenshots": [
+    {
+      "src": "screenshot.jpg",
+      "sizes": "1280x720",
+      "type": "image/jpg",
+      "platform": "wide"
+    }
+  ],
+  "description": "WebBoard is your go to application for quick doodles, notes, or sketches!",
+  "iarc_rating_id": "e58c174a-81d2-5c3c-32cc-34b8de4a52e9",
+  "related_applications": [
+    {
+      "platform": "windows",
+      "url": "https://www.instagram.com/",
+      "id": "clone.Instagram"
+    }
+  ],
+  "orientation": "any",
+  "shortcuts": [
+    {
+      "name": "Instagram clone",
+      "url": "/about"
+    },
+    {
+      "name": "Send Message",
+      "url": "/new-message",
+      "description": "Open a chat with another user and send a message to them."
+    }
+  ],
   "name": "Create React App Sample",
   "icons": [
     {
@@ -42,6 +72,12 @@
       "src": "./icons/apple-touch-icon-152x152.png",
       "sizes": "152x152",
       "type": "image/png"
+    }
+  ],
+  "protocol_handlers": [
+    {
+      "protocol": "web+music",
+      "url": "/play?track=%s"
     }
   ],
   "start_url": ".",
