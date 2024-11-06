@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import ProfilePosts from './Profile_posts';
 import SavedPosts from './Profile_saved';
 import TaggedPosts from './Profile_tagged';
-import Search from './Search'; // Search 모달 컴포넌트 추가
+import Search from '../Search'; // Search 모달 컴포넌트 추가
 import './Profile.css';
 import dummyImg from './img2.png'
 
